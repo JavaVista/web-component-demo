@@ -1,0 +1,19 @@
+{
+  "name": "web-component",
+  "version": "1.0.0",
+  "description": "Web-component demo",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javi",
+  "license": "ISC",
+  "dependencies": {
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

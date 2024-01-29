@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Comic Neue", cursive;
+}
+
+body {
+    background-color: #e23636;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #171821;
+    width: 90%;
+    max-width: 500px;
+    padding: 3em 2em;
+    margin-top: 1em;
+    border-radius: 1em;
+}
+
+.input-container {
+    display: flex;
+    /* grid-template-columns: 9fr 3fr; */
+    gap: 1em;
+    position: relative;
+}
+.search-wrapper {
+    position: relative;
+    flex-grow: 1;
+}
+
+.search-input {
+    width: 100%;
+}
+
+input {
+    padding: 1em 0.5em;
+    background-color: #504a4a;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    outline: none;
+}
+
+.search-button {
+    flex-shrink: 0;
+    width: 25%;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: #f78f3f;
+    color: #fff;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.display-container {
+    padding: 1em;
+}
+
+.character-image {
+    background-color: #fff;
+    padding: 0.5em;
+    height: 9.37em;
+    width: 9.37em;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.character-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.character-name {
+    text-align: center;
+    color: #fff;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.character-desc {
+    text-align: justify;
+    color: #518cca;
+    line-height: 2em;
+    font-weight: 300;
+}
+.list-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #504a4a;
+    color: #fff;
+    z-index: 10;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+.autocomplete-items {
+    padding: 0.5em;
+}
+.autocomplete-items:hover {
+    background-color: #f78f3f;
+    color: #171821;
+    text-transform: uppercase;
+    font-weight: 600;
+}
