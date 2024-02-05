@@ -14,13 +14,13 @@
 
         <!-- Example of Native HTML that is similar to a Web Component -->
 
-        <!-- <main class="modal-container">
+        <main class="modal-container">
             <button data-open-modal class="modal-button">Open Modal</button>
             <dialog data-modal>
                 <p>This is a native HTML modal element</p>
                 <button class="modal-button" data-close-modal>Close Modal</button>
             </dialog>
-        </main> -->
+        </main>
 
 
         <div class="container">
@@ -47,17 +47,17 @@
     <script>
         // modal script 
 
-        // const modalButton = document.querySelector('[data-open-modal]');
-        // const modal = document.querySelector('[data-modal]');
-        // const closeButton = document.querySelector('[data-close-modal]');
+        const modalButton = document.querySelector('[data-open-modal]');
+        const modal = document.querySelector('[data-modal]');
+        const closeButton = document.querySelector('[data-close-modal]');
 
-        // modalButton.addEventListener('click', () => {
-        //     modal.showModal();
-        // });
+        modalButton.addEventListener('click', () => {
+            modal.showModal();
+        });
 
-        // closeButton.addEventListener('click', () => {
-        //     modal.close();
-        // });
+        closeButton.addEventListener('click', () => {
+            modal.close();
+        });
 
     </script>
 </body>
