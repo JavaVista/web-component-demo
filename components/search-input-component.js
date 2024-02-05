@@ -51,7 +51,7 @@ class SearchInputComponent extends HTMLElement {
         try {
             const jsonData = await API.fetchCharactersThatStartWith(input);
             if (!jsonData || !jsonData.data || !jsonData.data.results.length) {
-                listContainer.innerHTML = '<div class="autocomplete-item">No characters found</div>';
+                listContainer.innerHTML = '<div class="autocomplete-items">No characters found</div>';
                 listContainer.style.display = 'block';
                 return;
             }

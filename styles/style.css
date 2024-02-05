@@ -38,7 +38,7 @@ body {
 }
 
 /* modal styles */
-
+/* 
 .modal-container {
     display: flex;
     justify-content: center;
@@ -76,6 +76,6 @@ dialog::backdrop {
 
 .modal-button:hover {
     background-color: var(--septenary-color);
-}
+} */
 
 /* end of modal styles */

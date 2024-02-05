@@ -3,6 +3,8 @@
 
 This project is a demonstration of web components, presented at the Orlando Codecamp. It uses the Marvel API to fetch and display data about Marvel characters.
 
+![Web Components](/web-components-demo.jpg)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
