@@ -11,19 +11,62 @@
 <body>
 
     <main class="main-container">
+
+        <!-- Example of Native HTML that is similar to a Web Component -->
+
+        <!-- <main class="modal-container">
+            <button data-open-modal class="modal-button">Open Modal</button>
+            <dialog data-modal>
+                <p>This is a native HTML modal element</p>
+                <button class="modal-button" data-close-modal>Close Modal</button>
+            </dialog>
+        </main> -->
+
+
         <div class="container">
+            <!-- <tooltip-component class="important" text="Search for a Marvel character and display details">Marvel
+                Character</tooltip-component> -->
+                
             <div class="input-container">
                 <div class="search-wrapper">
                     <input type="text" class="search-input" placeholder="Thanos" value="Thanos" id="input-box" />
                     <div class="list-container" id="show-list"></div>
                 </div>
                 <button class="search-button" id="submit-button">Submit</button>
-            </div>
-            <div class="display-container"></div>
+
+            <!-- Components: -->
+
+            <!-- <search-input-component value="Thanos"></search-input-component>
+            <character-card-component></character-card-component> -->
+
         </div>
+
+        <div class="display-container"></div>
+
+
     </main>
 
     <script type="module" src="js/index.js"></script>
+    <script src="components/tooltip-component.js"></script>
+    <script src="components/search-input-component.js"></script>
+    <script src="components/character-card-component.js"></script>
+
+    <script>
+        // modal script 
+
+        // const modalButton = document.querySelector('[data-open-modal]');
+        // const modal = document.querySelector('[data-modal]');
+        // const closeButton = document.querySelector('[data-close-modal]');
+
+        // modalButton.addEventListener('click', () => {
+        //     modal.showModal();
+        // });
+
+        // closeButton.addEventListener('click', () => {
+        //     modal.close();
+        // });
+
+    </script>
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-Sure, here's a quick draft for your README file:
 
 # Web-Component Demo
 
@@ -33,7 +32,7 @@ cd web-component-demo
 npm install
 ```
 
-4. Create a [`.env`](command:_github.copilot.openRelativePath?%5B%22.env%22%5D ".env") file in the root directory of the project and add your Marvel API keys:
+1. Create a `.env` file in the root directory of the project and add your Marvel API keys:
 
 ```env
 PUBLIC_KEY=your_public_key
@@ -62,4 +61,3 @@ This project is licensed under the ISC License.
 
 - Thanks to the [Orlando Code Camp](https://orlandocodecamp.com/) for the opportunity to present this project.
 - Thanks to Marvel for providing the API.
-

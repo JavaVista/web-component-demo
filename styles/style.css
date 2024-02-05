@@ -7,8 +7,18 @@
     font-family: "Comic Neue", cursive;
 }
 
+:root {
+    --primary-color: #e23636;
+    --secondary-color: #f78f3f;
+    --tertiary-color: #171821;
+    --quaternary-color: #504a4a;
+    --quinary-color: #fff;
+    --senary-color: #518cca;
+    --septenary-color: #e57e38;
+}
+
 body {
-    background-color: #e23636;
+    background-color: var(--primary-color);
 }
 
 .main-container {
@@ -19,7 +29,7 @@ body {
 }
 
 .container {
-    background-color: #171821;
+    background-color: var(--tertiary-color);
     width: 90%;
     max-width: 500px;
     padding: 3em 2em;
@@ -27,12 +37,57 @@ body {
     border-radius: 1em;
 }
 
+/* modal styles */
+/* 
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin-top: 5em;
+    position: fixed;
+}
+
+dialog {
+    border: none;
+    border-radius: 0.5em;
+    padding: 1em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-button {
+    background-color: var(--secondary-color);
+    color: var(--quinary-color);
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 1em 0.5em;
+    margin: 0.5em 0;
+    width: 100%;
+}
+
+.modal-button:hover {
+    background-color: var(--septenary-color);
+} */
+
+/* end of modal styles */
+
+/* original non-component styles */
+
 .input-container {
     display: flex;
-    /* grid-template-columns: 9fr 3fr; */
     gap: 1em;
     position: relative;
 }
+
 .search-wrapper {
     position: relative;
     flex-grow: 1;
@@ -44,8 +99,8 @@ body {
 
 input {
     padding: 1em 0.5em;
-    background-color: #504a4a;
-    color: #fff;
+    background-color: var(--quaternary-color);
+    color: var(--quinary-color);
     border: none;
     border-radius: 0.5em;
     outline: none;
@@ -59,8 +114,8 @@ input {
 button {
     outline: none;
     border: none;
-    background-color: #f78f3f;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--quinary-color);
     border-radius: 0.5em;
     cursor: pointer;
 }
@@ -70,7 +125,7 @@ button {
 }
 
 .character-image {
-    background-color: #fff;
+    background-color: var(--quinary-color);
     padding: 0.5em;
     height: 9.37em;
     width: 9.37em;
@@ -87,7 +142,7 @@ button {
 
 .character-name {
     text-align: center;
-    color: #fff;
+    color: var(--quinary-color);
     padding: 0.5em 0;
     text-transform: uppercase;
     font-weight: 600;
@@ -96,7 +151,7 @@ button {
 
 .character-desc {
     text-align: justify;
-    color: #518cca;
+    color: var(--senary-color);
     line-height: 2em;
     font-weight: 300;
 }
@@ -105,8 +160,8 @@ button {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #504a4a;
-    color: #fff;
+    background-color: var(--quaternary-color);
+    color: var(--quinary-color);
     z-index: 10;
     border-radius: 0.5em;
     overflow: hidden;
@@ -115,8 +170,8 @@ button {
     padding: 0.5em;
 }
 .autocomplete-items:hover {
-    background-color: #f78f3f;
-    color: #171821;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-transform: uppercase;
     font-weight: 600;
 }
