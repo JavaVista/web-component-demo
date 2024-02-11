@@ -102,7 +102,10 @@ class SearchInputComponent extends HTMLElement {
                 border: none;
                 border-radius: 0.5em;
                 color: var(--quinary-color);
-                background-color: transparent; /* To let the container's color show */
+                background-color: transparent; 
+            }
+            .search-input:focus {
+                outline: 0.125em solid var(--secondary-color);
             }
             #submit-button {
                 background-color: var(--secondary-color);
