@@ -64,8 +64,14 @@ class CharacterCardComponent extends HTMLElement {
 
     setError(message) {
         this.shadowRoot.innerHTML = `
+            <style>
+            .error-message {
+                color: var(--primary-color);
+                text-align: center;
+            }
+            </style>
             <div class="error-message">${message}</div>
-        `;
+        `; 
     }
 }
 

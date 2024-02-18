@@ -22,15 +22,15 @@ class SearchInputComponent extends HTMLElement {
     set value(newValue) {
         const inputBox = this.shadowRoot.querySelector('#input-box');
         if (inputBox && newValue !== inputBox.value) {
-            inputBox.value = newValue; 
+            inputBox.value = newValue;
             this.setAttribute('value', newValue);
         }
     }
-    
+
 
     search() {
         // Dispatches a 'search' event with the current input value
-        const inputValue = this.shadowRoot.querySelector('#input-box').value; 
+        const inputValue = this.shadowRoot.querySelector('#input-box').value;
         this.clearAutocomplete();
         this.dispatchEvent(new CustomEvent('search', {
             detail: inputValue,
@@ -49,26 +49,26 @@ class SearchInputComponent extends HTMLElement {
         }
 
         try {
-            const jsonData = await API.fetchCharactersThatStartWith(input);
-            if (!jsonData || !jsonData.data || !jsonData.data.results.length) {
+            const response = await API.fetchCharactersThatStartWith(input);
+            if (!response || !response.data || !response.data.results.length) {
                 listContainer.innerHTML = '<div class="autocomplete-items">No characters found</div>';
                 listContainer.style.display = 'block';
                 return;
             }
 
-            jsonData.data.results.forEach(result => {
+            response.data.results.forEach(result => {
                 let name = result.name;
                 let div = document.createElement('div');
                 div.className = 'autocomplete-items';
                 div.textContent = name;
                 div.addEventListener('click', () => {
                     this.shadowRoot.querySelector('#input-box').value = name;
-                    this.clearAutocomplete()
+                    this.clearAutocomplete();
                     this.search();
                 });
                 listContainer.appendChild(div);
             });
-            if (jsonData.data.results.length > 0) {
+            if (response.data.results.length > 0) {
                 listContainer.style.display = 'block';
             }
         } catch (error) {
