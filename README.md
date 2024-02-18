@@ -53,7 +53,7 @@ The application should now be running at `http://localhost:1234`.
 
 ## Usage
 
-Enter a Marvel character's name in the search box and click the "Submit" button. The application will display information about the character.
+Enter a Marvel character's name in the search box and click the "Submit" button. The application will display information about the character. To search for a character, type the name in the input box and select a character from the autocomplete list. The details of the selected character will then be populated.
 
 ## License
 
