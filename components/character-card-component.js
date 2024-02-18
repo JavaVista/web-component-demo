@@ -67,6 +67,9 @@ class CharacterCardComponent extends HTMLElement {
             <style>
             .error-message {
                 color: var(--primary-color);
+                margin-top: 0.5em;
+                font-weight: bold;
+                font-size: 1.5em;
                 text-align: center;
             }
             </style>
