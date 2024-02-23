@@ -1,4 +1,6 @@
 import md5 from 'md5';
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 const API = (() => {

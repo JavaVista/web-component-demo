@@ -34,7 +34,7 @@ cd web-component-demo
 npm install
 ```
 
-1. Create a `.env` file in the root directory of the project and add your Marvel API keys:
+4. Create a `.env` file in the root directory of the project and add your Marvel API keys:
 
 ```env
 PUBLIC_KEY=your_public_key
@@ -43,7 +43,14 @@ PRIVATE_KEY=your_private_key
 
 Remember to replace `your_public_key` and `your_private_key` with your actual Marvel API keys.
 
-5. Start the development server:
+5. In your JavaScript file, import and configure dotenv to load the environment variables:
+
+```javascript
+import dotenv from 'dotenv';
+dotenv.config();
+```
+
+6. Start the development server:
 
 ```sh
 npm start
